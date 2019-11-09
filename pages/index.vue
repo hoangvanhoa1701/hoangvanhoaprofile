@@ -1,11 +1,5 @@
 <template>
   <div >
-    <!-- <div>
-      <div width="46" height="46" >
-        <img width="46" height="46" src="@/assets/image/testSVG.svg" alt="">
-      </div>
-    </div> -->
-
     <div class="container" id="topPage">
       <div>
         <!-- <logo/> -->
@@ -101,8 +95,8 @@
     </div>    
 
     <div class="containerCV" id="CVMe">
-      <div class="contentCV">
-        <div class="contentCVLeft">
+      <div class="contentCV row">
+        <div class="contentCVLeft col-8 col-s-12">
           <div class="contentCVLeftMain">
             <div class="nameMember">
               Hoàng Văn Hoà
@@ -348,7 +342,7 @@
           </div>
         </div>
 
-        <div class="contentCVRight">
+        <div class="contentCVRight col-4 col-s-12">
           <div class="imageAvatarMain">
             <!-- <div class="imageAvatarMainStyle img-400-400">
               <img class="imageLarge" src="~assets/image/profile-hover.png" alt="">
@@ -439,6 +433,25 @@
     <div class="containerCV" id="AboutMe">
       <img  src="@/assets/image/testSVG.svg" alt="">
     </div>
+
+	        <!-- popup code -->
+	        <div id="xmas-popup" class="popup" href="#">
+	            <div class="popup-content">
+	                <img src="popup.jpg" alt="xmas-sale" />
+	                <a href="#" class="close">x</a>
+	            </div>
+	        </div>
+	
+
+	        <!-- normal page code -->
+	        <div class="wrapper">
+	            <h1>CSS Only Popup</h1>
+	            <p>
+	                Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore maga aliquam erat volutpat. Ut ninja wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit ninja lobortis nisl ut aliquip ex ea commodo consequat. Duis ninja autem vel eum iriure dolor in hendrerit in vulputate ninja velit esse molestie consequat, vel illum dolore eu feugiat nulla ninja facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam ninja ipsum liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi ninja non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes ninja demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas ninja est etiam processus dynamicus, qui ninja sequitur mutationem consuetudium lectorum.
+	            </p>
+	            <a href="#xmas-popup" class="button">Show popup</a>
+	        </div>
+
   </div>
 </template>
 
@@ -448,6 +461,19 @@ import Logo from '~/components/Logo.vue'
 export default {
   components: {
     Logo
+  },
+  methods: {
+    scrollElement(el) {
+      let data = document.getElementById(el)
+      if (data) {
+        $([document.documentElement, document.body]).animate(
+          {
+            scrollTop: $("#" + el).offset().top
+          },
+          1500
+        )
+      }
+    },
   }
 }
 </script>
@@ -482,5 +508,164 @@ export default {
 
 .links {
   padding-top: 15px;
+}
+
+
+body {
+ background: #ddd;
+ margin: 0;
+ font-family: arial;
+ font-size: 1.2em;
+ color: #111;
+}
+	
+.wrapper {
+ max-width: 960px;
+ margin: 10% auto;
+ text-align: center;
+ line-height: 2em;
+}
+	
+.button {
+ border: 3px solid #111;
+ padding: 10px;
+ color: #111;
+ text-decoration: none;
+}
+	
+
+.popup {
+ position: fixed;
+ width: 100%;
+ height: 100%;
+ top: 0;
+ left: 0;
+ background: rgba(0,0,0,0.6);
+ display: none;
+}
+
+#xmas-popup .popup-content{
+ width: 600px;
+ height: 600px;
+ background: #bbb;
+ margin: 100px auto;
+ position: relative;
+ border: 5px solid #fff;
+}
+
+.close {
+ position: absolute;
+ top: 5px;
+ right: 5px;
+ border-radius: 50%;
+ background: #222;
+ border: 3px solid #fff;
+ color: #fff;
+ text-decoration: none;
+ line-height: 0;
+ padding: 9px 0 11px;
+ width: 20px;
+ text-align: center;
+}
+	
+.popup:target {
+  display: block;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: #9933cc;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+.aside {
+  background-color: #33b5e5;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
 }
 </style>

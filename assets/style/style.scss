@@ -18,7 +18,7 @@ body {
   width: 95%;
 }
 .contentCV {
-  display: flex;
+  //display: flex;
   border: 1px solid #35495e;
   border-radius: 12px;
   overflow: hidden;
@@ -112,8 +112,10 @@ body {
 .imageAvatarMainStyle{
     border-radius: 50%;
     background: #e2e8f0;
-    width: 400px;
-    height: 400px;
+    // width: 400px;
+    // height: 400px;
+    width: 100%;
+    height: auto;
     overflow: hidden;
 }
 .img-400-400{
