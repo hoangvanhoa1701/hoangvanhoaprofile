@@ -28,7 +28,7 @@
           </div>
         </div>
         <h1 class="title">
-          Hoang Van Hoa Profilessssssssssssssssssssssss
+          Hoang Van Hoa Profile
         </h1>
         <h2 class="subtitle">
           Welcome you
