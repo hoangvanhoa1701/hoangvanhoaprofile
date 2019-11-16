@@ -31,8 +31,8 @@
           Hoang Van Hoa Profile
         </h1>
         <h2 class="subtitle">
-          Welcome you
-          This is project website Hoang Van Hoa Profile
+          Welcome!
+          This is project Hoang Van Hoa Profile website
         </h2>
         <div class="links">
           <a
@@ -95,7 +95,7 @@
     </div>    
 
     <div class="containerCV" id="CVMe">
-      <div class="contentCV row">
+      <div class="contentCV">
         <div class="contentCVLeft">
           <div class="contentCVLeftMain">
             <div class="nameMember">
@@ -108,17 +108,16 @@
 
             <div class="aboutMember">
               <div>
-                Tên tôi là Hoà, mong muốn của tôi là trở thành Web Developer để nâng cấp
-                các sản phẩm đẹp, chạy nhanh và ổn định hơn cho công ty. Để được như
-                vậy tôi mong muốn sẽ được công ty nhận làm thực tập sinh. Và nếu có cơ
-                hội sẽ được là nhân viên chính thức của công ty. 
+                My nickname is Nova, i want to become a Professional Web Developer. 
+                I’m interested in IT because I can demonstrate my skills in Teamwork, soft
+                skills I am excellent at and I can contribute these strength to projects. 
               </div>
               <ul class="listTernPlans">
                 <li>
-                  Mục tiêu ngắn hạn: Thành thạo trong công việc và học thêm nhiều. 
+                  Short term goal: I want to become a Junior Full Tack Web Developer.
                 </li>
                 <li>
-                  Mục tiêu dài hạn: Trở thành Senior Web Developer.
+                  Long term goal: I want to become a Senior Web Developer.
                 </li>
               </ul>
             </div>
@@ -128,10 +127,10 @@
             <div class="typeInformation">
               <div class="typeInformationTitle">
                 <div class="imageIconTitle">
-                  <img class="imageIconTitleStyle" src="~assets/image/icon-address.png" alt="">
+                  <!-- <img class="imageIconTitleStyle" src="~assets/image/icon-address.png" alt=""> -->
                 </div>
                 <div class="nameTitle">
-                  HỌC TẬP
+                  STUDY
                 </div>
               </div>
               <div class="alinetypeInformationTitle">
@@ -140,14 +139,14 @@
               <div class="typeInformationContent">
                 <div class="typeInformationContentTitle">
                   <div class="typeInformationContentTitleName">
-                    Công nghệ thông tin Chất Lượng Cao 
+                    Information Technology High Quality 
                   </div>
                   <div class="typeInformationContentTitleTime">
                     08/2017 - Present
                   </div>
                 </div>
                 <div class="typeInformationContentFull">
-                  <p class="typeInformationContentMain">Cao Đẳng Quốc Tế TPHCM - Chương trình đào tạo chuyển giao của Đại học Khoa Học Tự Nhiên</p>
+                  <p class="typeInformationContentMain">International College Ho Chi Minh City - University of Science</p>
                   <ul class="typeInformationContentSup">
                 
                   </ul>
@@ -156,14 +155,14 @@
               <div class="typeInformationContent">
                 <div class="typeInformationContentTitle">
                   <div class="typeInformationContentTitleName">
-                    Chứng chỉ lập trình Python căn 
+                    The Complete Python Basics Programming Course 
                   </div>
                   <div class="typeInformationContentTitleTime">
                     03/2019 - 05/2019
                   </div>
                 </div>
                 <div class="typeInformationContentFull">
-                  Đại Học Khoa Học Tự Nhiên
+                  University of Science Ho Chi Minh
                 </div>
               </div>
             </div>
@@ -171,10 +170,10 @@
             <div class="typeInformation">
               <div class="typeInformationTitle">
                 <div class="imageIconTitle">
-                  <img class="imageIconTitleStyle" src="~assets/image/icon-address.png" alt="">
+                  <!-- <img class="imageIconTitleStyle" src="~assets/image/icon-address.png" alt=""> -->
                 </div>
                 <div class="nameTitle">
-                  KINH NGHIỆM
+                  EXPERIENCE
                 </div>
               </div>
               <div class="alinetypeInformationTitle">
@@ -183,17 +182,17 @@
               <div class="typeInformationContent">
                 <div class="typeInformationContentTitle">
                   <div class="typeInformationContentTitleName">
-                    Đồ án lập trình Windows (C#)
+                    Project Program Windows (C#)
                   </div>
                   <div class="typeInformationContentTitleTime">
                     03/2019 - 04/2019
                   </div>
                 </div>
                 <div class="typeInformationContentFull">
-                  <p class="typeInformationContentMain">Cao đẳng quốc tế Tp.HCM</p>
+                  <p class="typeInformationContentMain">International College Ho Chi Minh City</p>
                   <ul class="typeInformationContentSup">
                     <li>
-                      Thực hiện đồ án môn lập trình Windows cùng với nhóm tại trường
+                      Build project program Windows (C#) my classmates
                     </li>
                   </ul>
                 </div>
@@ -202,17 +201,61 @@
               <div class="typeInformationContent">
                 <div class="typeInformationContentTitle">
                   <div class="typeInformationContentTitleName">
-                    Đồ án triển khai Laravel Framework
+                    Project Laravel Framework
                   </div>
                   <div class="typeInformationContentTitleTime">
-                    06/2019 - Present
+                    06/2019 - 07/2019
                   </div>
                 </div>
                 <div class="typeInformationContentFull">
-                  <p class="typeInformationContentMain">Cao Đẳng Quốc Tế TPHCM</p>
+                  <p class="typeInformationContentMain">International College Ho Chi Minh City</p>
                   <ul class="typeInformationContentSup">
                     <li>
-                      Một mình nghiên cứu và triển khai sử dụng Framework Laravel
+                      I have researched, implemented and used the project alone.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="typeInformationContent">
+                <div class="typeInformationContentTitle">
+                  <div class="typeInformationContentTitleName">
+                    Project Mitsubishi Electric Website Viet Nam
+                  </div>
+                  <div class="typeInformationContentTitleTime">
+                    09/2019 - 10/2019
+                  </div>
+                </div>
+                <div class="typeInformationContentFull">
+                  <p class="typeInformationContentMain">Yoong Solution Company</p>
+                  <ul class="typeInformationContentSup">
+                    <li>
+                      Took part in project and build front end for website to Vue JS (Nuxt JS)
+                      <div>
+                      http://mevn-staging.storm12.com/
+                      </div>  
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="typeInformationContent">
+                <div class="typeInformationContentTitle">
+                  <div class="typeInformationContentTitleName">
+                    Build My Hoang Hoa Profile Website
+                  </div>
+                  <div class="typeInformationContentTitleTime">
+                    11/2019 - Present
+                  </div>
+                </div>
+                <div class="typeInformationContentFull">
+                  <p class="typeInformationContentMain">At my home</p>
+                  <ul class="typeInformationContentSup">
+                    <li>
+                      Build front end for website to Vue JS (Nuxt JS). You can see it below:
+                      <div>
+                        https://hoangvanhoa-profile.herokuapp.com/
+                      </div>
                     </li>
                   </ul>
                 </div>
@@ -222,7 +265,7 @@
             <div class="typeInformation">
               <div class="typeInformationTitle">
                 <div class="imageIconTitle">
-                  <img class="imageIconTitleStyle" src="~assets/image/icon-address.png" alt="">
+                  <!-- <img class="imageIconTitleStyle" src="~assets/image/icon-address.png" alt=""> -->
                 </div>
                 <div class="nameTitle">
                   HOẠT ĐỘNG
@@ -273,7 +316,7 @@
             <div class="typeInformation">
               <div class="typeInformationTitle">
                 <div class="imageIconTitle">
-                  <img class="imageIconTitleStyle" src="~assets/image/icon-address.png" alt="">
+                  <!-- <img class="imageIconTitleStyle" src="~assets/image/icon-address.png" alt=""> -->
                 </div>
                 <div class="nameTitle">
                   THÔNG TIN THÊM
@@ -371,7 +414,7 @@
             <div class="informationDiffirentSkill">
               <div class="typeInformationTitle">
                 <div class="imageIconTitle">
-                  <img class="imageIconTitleStyle" src="~assets/image/icon-address.png" alt="">
+                  <!-- <img class="imageIconTitleStyle" src="~assets/image/icon-address.png" alt=""> -->
                 </div>
                 <div class="nameTitle">
                   HỌC TẬP
@@ -392,7 +435,7 @@
             <div class="informationDiffirentLang">
               <div class="typeInformationTitle">
                 <div class="imageIconTitle">
-                  <img class="imageIconTitleStyle" src="~assets/image/icon-address.png" alt="">
+                  <!-- <img class="imageIconTitleStyle" src="~assets/image/icon-address.png" alt=""> -->
                 </div>
                 <div class="nameTitle">
                   HỌC TẬP
@@ -412,7 +455,7 @@
             <div class="informationDiffirentFavorite">
               <div class="typeInformationTitle">
                 <div class="imageIconTitle">
-                  <img class="imageIconTitleStyle" src="~assets/image/icon-address.png" alt="">
+                  <!-- <img class="imageIconTitleStyle" src="~assets/image/icon-address.png" alt=""> -->
                 </div>
                 <div class="nameTitle">
                   HỌC TẬP

@@ -33,12 +33,14 @@ body {
   font-size: 52px;
   font-weight: 500;
   color: cadetblue;
+  text-align: center;
 }
 .workMember {
   font-size: 36px;
   font-weight: 700;
   color: darkgray;
   padding-bottom: 32px;
+  text-align: center;
 }
 .listTernPlans {
   padding-top: 12px;
@@ -54,10 +56,22 @@ body {
   align-items: center;
 }
 .imageIconTitle {
-  padding-right: 12px;
+  margin-right: 12px;
+//   border-radius: 50%;
+//   width: 55px;
+//   height: 55px;
+//   background: cadetblue;
+//   height: 55px;
 }
 .imageIconTitleStyle {
   width: 100%;
+}
+.imageIconTitleStyleB{
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    background: cadetblue;
+    height: 55px;
 }
 .nameTitle {
   font-size: 24px;
@@ -66,7 +80,8 @@ body {
   padding-right: 12px;
 }
 .alinetypeInformationTitle {
-  border-bottom: 1px solid #35495e;
+//   border-bottom: 1px solid #35495e;
+  border-bottom: 1px solid cadetblue;
 }
 .typeInformation{
   padding: 12px 0px;
