@@ -444,13 +444,13 @@
 	
 
 	        <!-- normal page code -->
-	        <div class="wrapper">
+	        <!-- <div class="wrapper">
 	            <h1>CSS Only Popup</h1>
 	            <p>
 	                Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore maga aliquam erat volutpat. Ut ninja wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit ninja lobortis nisl ut aliquip ex ea commodo consequat. Duis ninja autem vel eum iriure dolor in hendrerit in vulputate ninja velit esse molestie consequat, vel illum dolore eu feugiat nulla ninja facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam ninja ipsum liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi ninja non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes ninja demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas ninja est etiam processus dynamicus, qui ninja sequitur mutationem consuetudium lectorum.
 	            </p>
 	            <a href="#xmas-popup" class="button">Show popup</a>
-	        </div>
+	        </div> -->
 
   </div>
 </template>
@@ -511,7 +511,7 @@ export default {
 }
 
 
-body {
+/* body {
  background: #ddd;
  margin: 0;
  font-family: arial;
@@ -631,7 +631,7 @@ html {
   text-align: center;
   font-size: 12px;
   padding: 15px;
-}
+} */
 
 /* For mobile phones: */
 [class*="col-"] {
