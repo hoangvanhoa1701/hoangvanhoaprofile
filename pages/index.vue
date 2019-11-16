@@ -103,7 +103,7 @@
             </div>
 
             <div class="workMember">
-              Intern Lập Trình Web
+              Frontend Web Developer
             </div>
 
             <div class="aboutMember">
