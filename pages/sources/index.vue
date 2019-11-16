@@ -1,13 +1,5 @@
 <template>
-  <div>
-    <div class="containerCV" id="AboutMe">
-      <img src="@/assets/image/testSVG.svg" alt />
-      <div style="text-align:center;text-align: center;position: relative;bottom: 832px;">
-        Sorry, we're down for maintenace.
-        <div>We'll be back shortly.</div>
-      </div>
-    </div>
-
+  <div style="padding-top: 180px;">
     <div class="containerCV">
       <div class="toDoAppStyle">
         <section class="todoapp">
@@ -76,6 +68,13 @@
           <p>Esc to cancel edit</p>
           <p>Enter to accept edit</p>
         </footer>
+      </div>
+    </div>
+
+    <div class="containerCV" id="AboutMe">
+      <div style="text-align:center;">
+        Sorry, we're down for maintenace.
+        <div>We'll be back shortly.</div>
       </div>
     </div>
   </div>
