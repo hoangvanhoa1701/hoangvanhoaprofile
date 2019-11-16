@@ -511,7 +511,7 @@ export default {
 }
 
 
-body {
+/* body {
  background: #ddd;
  margin: 0;
  font-family: arial;
@@ -631,7 +631,7 @@ html {
   text-align: center;
   font-size: 12px;
   padding: 15px;
-}
+} */
 
 /* For mobile phones: */
 [class*="col-"] {
