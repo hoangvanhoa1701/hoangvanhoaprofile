@@ -96,7 +96,7 @@
 
     <div class="containerCV" id="CVMe">
       <div class="contentCV row">
-        <div class="contentCVLeft col-8 col-s-12">
+        <div class="contentCVLeft">
           <div class="contentCVLeftMain">
             <div class="nameMember">
               Hoàng Văn Hoà
@@ -342,7 +342,7 @@
           </div>
         </div>
 
-        <div class="contentCVRight col-4 col-s-12">
+        <div class="contentCVRight">
           <div class="imageAvatarMain">
             <!-- <div class="imageAvatarMainStyle img-400-400">
               <img class="imageLarge" src="~assets/image/profile-hover.png" alt="">
@@ -634,13 +634,13 @@ html {
 } */
 
 /* For mobile phones: */
-[class*="col-"] {
+/* [class*="col-"] {
   width: 100%;
-}
+} */
 
 @media only screen and (min-width: 600px) {
   /* For tablets: */
-  .col-s-1 {width: 8.33%;}
+  /* .col-s-1 {width: 8.33%;}
   .col-s-2 {width: 16.66%;}
   .col-s-3 {width: 25%;}
   .col-s-4 {width: 33.33%;}
@@ -651,11 +651,11 @@ html {
   .col-s-9 {width: 75%;}
   .col-s-10 {width: 83.33%;}
   .col-s-11 {width: 91.66%;}
-  .col-s-12 {width: 100%;}
+  .col-s-12 {width: 100%;} */
 }
 @media only screen and (min-width: 768px) {
   /* For desktop: */
-  .col-1 {width: 8.33%;}
+  /* .col-1 {width: 8.33%;}
   .col-2 {width: 16.66%;}
   .col-3 {width: 25%;}
   .col-4 {width: 33.33%;}
@@ -666,6 +666,6 @@ html {
   .col-9 {width: 75%;}
   .col-10 {width: 83.33%;}
   .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
+  .col-12 {width: 100%;} */
 }
 </style>

@@ -1,6 +1,6 @@
-# hoangvanhoaprofile
+# hoanghoa-profile
 
-> This is project website Hoang Van Hoa Profile
+> hoanghoa-profile
 
 ## Build Setup
 
