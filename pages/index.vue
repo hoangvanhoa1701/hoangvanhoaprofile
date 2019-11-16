@@ -84,7 +84,7 @@
       </div>
     </div>
 
-    <div id="wa_loading" class="wa-disable">
+    <!-- <div id="wa_loading" class="wa-disable">
       <span class="l-1"></span>
       <span class="l- 2"></span>
       <span class="l- 3"></span>
@@ -92,7 +92,7 @@
       <span class="l- 5"></span>
       <span class="l- 6"></span>
       <span>Powered by <b>AWING</b></span>
-    </div>    
+    </div>     -->
 
     <div class="containerCV" id="CVMe">
       <div class="contentCV">
@@ -268,7 +268,7 @@
                   <!-- <img class="imageIconTitleStyle" src="~assets/image/icon-address.png" alt=""> -->
                 </div>
                 <div class="nameTitle">
-                  HOẠT ĐỘNG
+                  ACTIVITY
                 </div>
               </div>
               <div class="alinetypeInformationTitle">
@@ -277,17 +277,18 @@
               <div class="typeInformationContent">
                 <div class="typeInformationContentTitle">
                   <div class="typeInformationContentTitleName">
-                    Tham gia tất cả hoạt động Hiến máu, Xuân tình nguyện và Mùa hè xanh
+                    Blood Donation, Green Summer/ Spring Volunteer Campaign.
                   </div>
                   <div class="typeInformationContentTitleTime">
-                    03/2019 - 04/2019
+                    <!-- 07/2018 - 09/2018 -->
                   </div>
                 </div>
                 <div class="typeInformationContentFull">
-                  <p class="typeInformationContentMain">Tham gia hầu hết các hoạt động vì cộng đồng.</p>
+                  <p class="typeInformationContentMain"></p>
                   <ul class="typeInformationContentSup">
                     <li>
-                      None
+                      Last years, I participated in a Green Summer Volunteer Campaign at my
+                      university. And it taught me a lot of experience, skill and teamwork skill.
                     </li>
                   </ul>
                 </div>
@@ -296,17 +297,18 @@
               <div class="typeInformationContent">
                 <div class="typeInformationContentTitle">
                   <div class="typeInformationContentTitleName">
-                    Tham gia làm vlog, phim ngắn
+                    Created Content Youtube, Vlog And Short Film.
                   </div>
                   <div class="typeInformationContentTitleTime">
-                    06/2019 - Present
+                    <!-- 06/2019 - Present -->
                   </div>
                 </div>
                 <div class="typeInformationContentFull">
-                  <p class="typeInformationContentMain">Cùng ekip MokoProduction tham gia các cuộc thi và dự án phim ngắn.</p>
+                  <p class="typeInformationContentMain"></p>
                   <ul class="typeInformationContentSup">
                     <li>
-                      Một mình nghiên cứu và triển khai sử dụng Framework Laravel
+                      I'm Youtuber, and i participated in creating content on youtube.
+                      I also took part in team Moko Production.
                     </li>
                   </ul>
                 </div>
@@ -319,7 +321,7 @@
                   <!-- <img class="imageIconTitleStyle" src="~assets/image/icon-address.png" alt=""> -->
                 </div>
                 <div class="nameTitle">
-                  THÔNG TIN THÊM
+                  INFORMATION MORE
                 </div>
               </div>
               <div class="alinetypeInformationTitle">
@@ -328,55 +330,26 @@
               <div class="typeInformationContent">
                 <div class="typeInformationContentTitle">
                   <div class="typeInformationContentTitleName">
-                    - Có nhiều kỹ năng mềm, vui vẻ hòa đồng với mọi người.
+                    
                   </div>
                   <div class="typeInformationContentTitleTime">
-                    03/2019 - 04/2019
-                  </div>
-                </div>
-                <div class="typeInformationContentFull">
-                  <p class="typeInformationContentMain">Cao đẳng quốc tế Tp.HCM</p>
-                  <ul class="typeInformationContentSup">
-                    <li>
-                      Thực hiện đồ án môn lập trình Windows cùng với nhóm tại trường
-                    </li>
-                  </ul>
-                </div>
-              </div>
 
-              <div class="typeInformationContent">
-                <div class="typeInformationContentTitle">
-                  <div class="typeInformationContentTitleName">
-                    - Tự tin giao tiếp, thuyết trình và báo cáo.
-                  </div>
-                  <div class="typeInformationContentTitleTime">
-                    06/2019 - Present
                   </div>
                 </div>
                 <div class="typeInformationContentFull">
-                  <p class="typeInformationContentMain">Cao Đẳng Quốc Tế TPHCM</p>
-                  <ul class="typeInformationContentSup">
-                    <li>
-                      Một mình nghiên cứu và triển khai sử dụng Framework Laravel
-                    </li>
-                  </ul>
-                </div>
-              </div>
+                  <p class="typeInformationContentMain">
 
-              <div class="typeInformationContent">
-                <div class="typeInformationContentTitle">
-                  <div class="typeInformationContentTitleName">
-                    - Chăm chỉ, cầu tiến, rất thích teamwork và có khả năng teamwork tốt.
-                  </div>
-                  <div class="typeInformationContentTitleTime">
-                    06/2019 - Present
-                  </div>
-                </div>
-                <div class="typeInformationContentFull">
-                  <p class="typeInformationContentMain">Cao Đẳng Quốc Tế TPHCM</p>
+                  </p>
                   <ul class="typeInformationContentSup">
                     <li>
-                      Một mình nghiên cứu và triển khai sử dụng Framework Laravel
+                      I'm a friendly and kind person.
+                    </li>
+                    <li>
+                      I have many good soft skills and good teamwork skills.
+                    </li>
+                    <li>
+                      I’ve always been a great team player. I’m good at keeping a team together
+                      and producing quality work in a team environment.
                     </li>
                   </ul>
                 </div>
@@ -403,6 +376,10 @@
             </div>
           </div>
 
+          <div style="text-align:center;padding-top:20px;">
+            WEBSITE UPDATING...
+          </div>
+
           <div class="informationSimple">
             <div class="informationSimpleImage">
               <img class="imageIconMini" src="" alt="">
@@ -410,11 +387,10 @@
             <p class="informationSimpleContent"></p>
           </div>
 
-          <div class="informationDiffirent">
+          <!-- <div class="informationDiffirent">
             <div class="informationDiffirentSkill">
               <div class="typeInformationTitle">
                 <div class="imageIconTitle">
-                  <!-- <img class="imageIconTitleStyle" src="~assets/image/icon-address.png" alt=""> -->
                 </div>
                 <div class="nameTitle">
                   HỌC TẬP
@@ -435,7 +411,6 @@
             <div class="informationDiffirentLang">
               <div class="typeInformationTitle">
                 <div class="imageIconTitle">
-                  <!-- <img class="imageIconTitleStyle" src="~assets/image/icon-address.png" alt=""> -->
                 </div>
                 <div class="nameTitle">
                   HỌC TẬP
@@ -455,7 +430,6 @@
             <div class="informationDiffirentFavorite">
               <div class="typeInformationTitle">
                 <div class="imageIconTitle">
-                  <!-- <img class="imageIconTitleStyle" src="~assets/image/icon-address.png" alt=""> -->
                 </div>
                 <div class="nameTitle">
                   HỌC TẬP
@@ -468,23 +442,33 @@
                 </p>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
 
     <div class="containerCV" id="AboutMe">
       <img  src="@/assets/image/testSVG.svg" alt="">
+      <div style="text-align:center;text-align: center;position: relative;bottom: 832px;">
+        Sorry, we're down for maintenace.
+        <div>
+            We'll be back shortly.
+        </div>
+      </div>
+    </div>
+
+    <div class="scrollTopPage" @click="scrollElement('topPage')">
+      <a href="#topPage"></a>
     </div>
 
 	        <!-- popup code -->
-	        <div id="xmas-popup" class="popup" href="#">
+	        <!-- <div id="xmas-popup" class="popup" href="#">
 	            <div class="popup-content">
 	                <img src="popup.jpg" alt="xmas-sale" />
 	                <a href="#" class="close">x</a>
 	            </div>
 	        </div>
-	
+	 -->
 
 	        <!-- normal page code -->
 	        <!-- <div class="wrapper">
@@ -507,15 +491,15 @@ export default {
   },
   methods: {
     scrollElement(el) {
-      let data = document.getElementById(el)
-      if (data) {
-        $([document.documentElement, document.body]).animate(
-          {
-            scrollTop: $("#" + el).offset().top
-          },
-          1500
-        )
-      }
+      // let data = document.getElementById(el)
+      // if (data) {
+      //   $([document.documentElement, document.body]).animate(
+      //     {
+      //       scrollTop: $("#" + el).offset().top
+      //     },
+      //     1500
+      //   )
+      // }
     },
   }
 }
@@ -553,6 +537,31 @@ export default {
   padding-top: 15px;
 }
 
+.scrollTopPage {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 30;
+}
+.scrollTopPage>a {
+    position: relative;
+    display: block;
+    width: 48px;
+    height: 48px;
+    background-color: cadetblue;
+    color: #fff;
+}
+.scrollTopPage>a:before {
+    content: "";
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    transform: translate(-50%,-50%) rotate(45deg);
+}
 
 /* body {
  background: #ddd;

@@ -57,10 +57,10 @@
             <nuxt-link to="/" class="textNavHeader uppercaseHoangVanHoa">Home</nuxt-link>
           </li>
           <li class="navLinkHoangVanHoa">
-            <a class="textNavHeader uppercaseHoangVanHoa" href>Sources</a>
+            <nuxt-link to="/sources" class="textNavHeader uppercaseHoangVanHoa" href>Sources</nuxt-link>
           </li>
           <li class="navLinkHoangVanHoa">
-            <a class="textNavHeader uppercaseHoangVanHoa" href>Contact me</a>
+            <nuxt-link to="/contact-me" class="textNavHeader uppercaseHoangVanHoa" href>Contact me</nuxt-link>
           </li>
         </ul>
 
@@ -112,9 +112,9 @@
       </div>
     </header>
 
-    <div class="scrollTopPage">
+    <!-- <div class="scrollTopPage">
       <a href="#topPage">Top ne</a>
-    </div>
+    </div> -->
   </div>
 </template>
 
