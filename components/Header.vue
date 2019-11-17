@@ -5,9 +5,11 @@
         <div class="logoWebsiteHoangVanHoa">
           <nuxt-link to="/" title="Logo Hoang Van Hoa Profile">
             <h1 class="overflowHiddenHoangVanHoa width0 height0">Hoang Van Hoa Profile</h1>
-            <img src="@/assets/image/logo/Hoang-Hoa-Profile-Official-Logo.png" 
-            alt="logo-small-hoang-hoa-profile-official-home-page" 
-            class="logo-small-hoang-hoa-profile-official-home-page">
+            <img
+              src="@/assets/image/logo/Hoang-Hoa-Profile-Official-Logo.png"
+              alt="logo-small-hoang-hoa-profile-official-home-page"
+              class="logo-small-hoang-hoa-profile-official-home-page"
+            />
             <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="20 20 70 70">
               <path
                 d="M39.84,31.44a2.85,2.85,0,0,0-1,.2,4.75,4.75,0,0,0-9.39,0,2.86,2.86,0,1,0-1,5.53H39.84a2.86,2.86,0,0,0,0-5.73Z"
@@ -51,7 +53,7 @@
                 points="48.85 54.81 44.55 49.8 47.42 49.8 43.12 44.8 38.83 49.8 41.69 49.8 37.4 54.81 40.98 54.81 37.4 59.11 43.12 59.11 48.85 59.11 45.27 54.81 48.85 54.81"
                 class="cls-5"
               />
-            </svg> -->
+            </svg>-->
           </nuxt-link>
         </div>
 
@@ -74,7 +76,6 @@
             </li>
           </ul>
         </div>
-
 
         <div>
           <div>
@@ -130,71 +131,71 @@
       <!-- Load Facebook SDK for JavaScript -->
       <div id="fb-root"></div>
       <script>
-      window.fbAsyncInit = function() {
-                FB.init({
-                  xfbml            : true,
-                  version          : 'v5.0'
-                });
-              };
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml: true,
+      version: "v5.0"
+    });
+  };
 
-              (function(d, s, id) {
-              var js, fjs = d.getElementsByTagName(s)[0];
-              if (d.getElementById(id)) return;
-              js = d.createElement(s); js.id = id;
-              js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-              fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));
+  (function(d, s, id) {
+    var js,
+      fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  })(document, "script", "facebook-jssdk");
       </script>
 
       <!-- Your customer chat code -->
-      <div class="fb-customerchat"
-        attribution=setup_tool
+      <div
+        class="fb-customerchat"
+        attribution="setup_tool"
         page_id="2029349853972332"
         theme_color="#5f9ea0"
         logged_in_greeting="Hi! How can we help you? Contact me now! <3"
-        logged_out_greeting="Hi! How can we help you? Contact me now! <3">
-      </div>
+        logged_out_greeting="Hi! How can we help you? Contact me now! <3"
+      ></div>
     </div>
- 
 
     <!-- <div class="scrollTopPage">
       <a href="#topPage">Top ne</a>
-    </div> -->
+    </div>-->
   </div>
 </template>
 
 <script>
 window.fbAsyncInit = function() {
-          FB.init({
-            xfbml            : true,
-            version          : 'v5.0'
-          });
-        };
+  FB.init({
+    xfbml: true,
+    version: "v5.0"
+  });
+};
 
-        (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
+(function(d, s, id) {
+  var js,
+    fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+  fjs.parentNode.insertBefore(js, fjs);
+})(document, "script", "facebook-jssdk");
 </script>
 
 <script>
 export default {
-  mounted(){
+  mounted() {
     //this.facebook();
   },
-  created() {
-
-   
- },
-       
-}
+  created() {}
+};
 </script>
 
 <style>
-.logo-small-hoang-hoa-profile-official-home-page{
+.logo-small-hoang-hoa-profile-official-home-page {
   height: auto;
   margin-top: -10px;
   width: 132px;

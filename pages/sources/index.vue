@@ -83,9 +83,15 @@
 <script>
 const LOCAL_STORAGE_KEY = "todo-app-vue";
 export default {
+  head() {
+    return {
+      title: this.title,
+      meta: [{ hid: this.title, name: this.title, content: this.title }]
+    };
+  },
   data() {
     return {
-      title: 'To-do List App - by Nova',
+      title: "To-do List App - by Nova",
       todos: JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY)) || [
         { text: "Learn JavaScript ES6+ goodies", isDone: true },
         { text: "Learn Vue", isDone: false },

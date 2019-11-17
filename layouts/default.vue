@@ -42,6 +42,7 @@ html {
   color: #3b8070;
   text-decoration: none;
   padding: 10px 30px;
+  margin-bottom: 5px;
 }
 
 .button--green:hover {
@@ -56,7 +57,8 @@ html {
   color: #35495e;
   text-decoration: none;
   padding: 10px 30px;
-  /* margin-left: 15px; */
+  margin-bottom: 5px;
+  /* margin-left: 5px; */
 }
 
 .button--grey:hover {
