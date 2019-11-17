@@ -1,5 +1,5 @@
 {
-  "name": "Hoang Hoa - Profile",
+  "name": "hoanghoa-profile",
   "version": "1.0.0",
   "description": "This is project website Hoang Van Hoa Profile",
   "author": "Hoang Hoa Official",
@@ -12,12 +12,12 @@
     "heroku-postbuild": "npm run build"
   },
   "dependencies": {
-    "live-server": "^1.2.1",
     "nuxt": "^2.0.0",
     "vue-router": "^3.1.3"
   },
   "devDependencies": {
     "node-sass": "^4.13.0",
-    "sass-loader": "^8.0.0"
+    "sass-loader": "^8.0.0",
+    "live-server": "1.2.0"
   }
 }
