@@ -4,7 +4,7 @@
       <div class="toDoAppStyle">
         <section class="todoapp">
           <header class="header">
-            <h1>To-do List App - by Nova</h1>
+            <h1>{{title}}</h1>
             <input
               class="new-todo"
               placeholder="What needs to be done?"
@@ -85,6 +85,7 @@ const LOCAL_STORAGE_KEY = "todo-app-vue";
 export default {
   data() {
     return {
+      title: 'To-do List App - by Nova',
       todos: JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY)) || [
         { text: "Learn JavaScript ES6+ goodies", isDone: true },
         { text: "Learn Vue", isDone: false },
