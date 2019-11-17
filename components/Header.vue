@@ -112,11 +112,52 @@
       </div>
     </header>
 
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+     <script>
+      window.fbAsyncInit = function() {
+                FB.init({
+                  xfbml            : true,
+                  version          : 'v5.0'
+                });
+              };
+
+              (function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+              fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+      </script>
+
+      <!-- Your customer chat code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="2029349853972332"
+        theme_color="#5f9ea0"
+        logged_in_greeting="Hi! How can we help you? Contact me now! <3"
+        logged_out_greeting="Hi! How can we help you? Contact me now! <3">
+      </div>
+
     <!-- <div class="scrollTopPage">
       <a href="#topPage">Top ne</a>
     </div> -->
   </div>
 </template>
+
+<script>
+export default {
+  mounted(){
+    //this.facebook();
+  },
+  created() {
+
+   
+ },
+       
+}
+</script>
 
 <style>
 .uppercaseHoangVanHoa {
