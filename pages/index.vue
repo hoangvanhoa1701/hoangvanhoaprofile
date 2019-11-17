@@ -558,6 +558,7 @@
 	            </p>
 	            <a href="#xmas-popup" class="button">Show popup</a>
     </div>-->
+
   </div>
 </template>
 
@@ -577,7 +578,8 @@ export default {
       subtitle: [
         "Welcome! You may call me Nova.",
         "This is project Hoang Hoa Profile website."
-      ]
+      ],
+
     };
   },
   components: {

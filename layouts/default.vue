@@ -43,6 +43,7 @@ html {
   text-decoration: none;
   padding: 10px 30px;
   margin-bottom: 5px;
+  cursor: pointer;
 }
 
 .button--green:hover {
@@ -58,6 +59,7 @@ html {
   text-decoration: none;
   padding: 10px 30px;
   margin-bottom: 5px;
+  cursor: pointer;
   /* margin-left: 5px; */
 }
 

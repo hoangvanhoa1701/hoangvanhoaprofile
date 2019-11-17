@@ -1,80 +1,121 @@
 <template>
   <div style="padding-top: 180px;">
     <div class="containerCV">
-      <div class="toDoAppStyle">
-        <section class="todoapp">
-          <header class="header">
-            <h1>{{title}}</h1>
-            <input
-              class="new-todo"
-              placeholder="What needs to be done?"
-              v-model.trim="newTodo"
-              @keyup.enter="createTodo"
-              autofocus
-            />
-          </header>
+      <div class="AppStyle">
+        <h1>{{title}}</h1>
 
-          <!-- This section should be hidden by default and shown when there are todos -->
-          <section class="main">
-            <ul class="todo-list">
-              <li
-                v-for="(todo,index) in filteredTodos"
-                :key="index"
-                :class="{completed: todo.isDone, editing: todo === editingTodo}"
-              >
-                <div class="view">
-                  <input class="toggle" type="checkbox" v-model="todo.isDone" />
-                  <label @dblclick="startEditing(todo)">{{todo.text}}</label>
-                  <button class="destroy" @click="destroy(todo)"></button>
-                </div>
+        <div class="AppStyle_todoapp">
+          <h2>{{nameApp.toDoList}}</h2>
+          <section class="todoapp">
+            <div class="header">
+              <input
+                class="new-todo"
+                placeholder="What needs to be done?"
+                v-model.trim="newTodo"
+                @keyup.enter="createTodo"
+                autofocus
+              />
+            </div>
 
-                <input
-                  class="edit"
-                  @keyup.escape="cancelEditing(todo)"
-                  @keyup.enter="finishEditing(todo)"
-                  @blur="finishEditing(todo)"
-                  v-model.trim="todo.text"
-                />
-              </li>
-            </ul>
+            <!-- This section should be hidden by default and shown when there are todos -->
+            <section class="main">
+              <ul class="todo-list">
+                <li
+                  v-for="(todo,index) in filteredTodos"
+                  :key="index"
+                  :class="{completed: todo.isDone, editing: todo === editingTodo}"
+                >
+                  <div class="view">
+                    <input class="toggle" type="checkbox" v-model="todo.isDone" />
+                    <label @dblclick="startEditing(todo)">{{todo.text}}</label>
+                    <button class="destroy" @click="destroy(todo)"></button>
+                  </div>
+
+                  <input
+                    class="edit"
+                    @keyup.escape="cancelEditing(todo)"
+                    @keyup.enter="finishEditing(todo)"
+                    @blur="finishEditing(todo)"
+                    v-model.trim="todo.text"
+                  />
+                </li>
+              </ul>
+            </section>
+
+            <!-- This footer should hidden by default and shown when there are todos -->
+            <div class="footer">
+              <span class="todo-count span">
+                <strong>{{itemsLeft}}</strong> item(s) left
+              </span>
+
+              <!-- Remove this if you don't implement routing -->
+              <ul class="filters">
+                <li>
+                  <router-link to="/all" :class="{ selected: status === 'all' }">All</router-link>
+                </li>
+                <li>
+                  <router-link to="/active" :class="{ selected: status === 'active' }">Active</router-link>
+                </li>
+                <li>
+                  <router-link
+                    to="/completed"
+                    :class="{ selected: status === 'completed' }"
+                  >Completed</router-link>
+                </li>
+              </ul>
+
+              <!-- Hidden if no completed items are left ↓ -->
+              <button class="clear-completed" @click="clearCompleted">Clear completed</button>
+            </div>
           </section>
 
-          <!-- This footer should hidden by default and shown when there are todos -->
-          <footer class="footer">
-            <span class="todo-count">
-              <strong>{{itemsLeft}}</strong> item(s) left
-            </span>
+          <div class="info">
+            <p>Double-click to edit a todo</p>
+            <p>Esc to cancel edit</p>
+            <p>Enter to accept edit</p>
+          </div>
+        </div>
 
-            <!-- Remove this if you don't implement routing -->
-            <ul class="filters">
-              <li>
-                <router-link to="/all" :class="{ selected: status === 'all' }">All</router-link>
-              </li>
-              <li>
-                <router-link to="/active" :class="{ selected: status === 'active' }">Active</router-link>
-              </li>
-              <li>
-                <router-link to="/completed" :class="{ selected: status === 'completed' }">Completed</router-link>
-              </li>
-            </ul>
+        <div class="AppStyle_menuToday">
+          <h2>{{nameApp.menuToday}}</h2>
+          <div class="menuToday">
+            <div>Would you like something to eat?</div>
+            <div class="links">
+              <a @click="randomMenu()" class="button--green transitionForOne">Random Menu Today</a>
+              <a @click="noIAmFull()" class="button--green transitionForOne">No, I'm full</a>
+            </div>
+            <div class="links">
+              <div>{{mean.name}}</div>
+              <div class="links" v-if="mean.id">
+                <a class="button--show" v-if="!show" @click="showItem(mean.id), show = !show">
+                  Show!
+                </a>
+                <a class="button--show" v-if="show" @click="showItem(mean.id), show = !show">
+                  Hidden!
+                </a>
+              </div> 
+              <!-- <a class="button--show" v-if="mean.id && hidden" @click="hidden = !hidden">Hidden!</a>  -->
+            </div>
+            <!-- <div class="links" v-if="tempMenu.name">
+              => {{tempMenu.name}}
+            </div> -->
+            <div class="links" v-if="tempMenu.name">
+              <transition name="fade">
+                <p v-if="show">=> {{tempMenu.name}} </p>
+              </transition>
+            </div>
 
-            <!-- Hidden if no completed items are left ↓ -->
-            <button class="clear-completed" @click="clearCompleted">Clear completed</button>
-          </footer>
-        </section>
 
-        <footer class="info">
-          <p>Double-click to edit a todo</p>
-          <p>Esc to cancel edit</p>
-          <p>Enter to accept edit</p>
-        </footer>
+          </div>
+
+        </div>
+
       </div>
     </div>
 
     <div class="containerCV" id="AboutMe">
-      <div style="text-align:center;">
-        Sorry, we're down for maintenace.
-        <div>We'll be back shortly.</div>
+      <div style="text-align:center;padding-top:60px;">
+        Updating ...
       </div>
     </div>
   </div>
@@ -91,14 +132,79 @@ export default {
   },
   data() {
     return {
-      title: "To-do List App - by Nova",
+      title: "Sources - by Nova",
+      nameApp: {
+        toDoList: "To-do List App",
+        menuToday: "Menu Today"
+      },
       todos: JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY)) || [
         { text: "Learn JavaScript ES6+ goodies", isDone: true },
         { text: "Learn Vue", isDone: false },
         { text: "Build something awesome", isDone: false }
       ],
       editingTodo: null,
-      newTodo: null
+      newTodo: null,
+      mean: {
+        id: null,
+        name: "Uhm ... ",
+      },
+      menu: [
+        {id: 12,
+        name: "Mây trắng vườn hồng",},
+        {id: 1,
+        name:"Ngưu ma vương hút thuốc",},
+        {id: 2,
+        name:"Chu bát giới đại náo chuồng gà",},
+        {id: 3,
+        name:"Hôm nay mình nhịn !!",},
+        {id: 4,
+        name:"Rồng xanh vượt đại dương",},
+        {id: 5,
+        name:"Thái dương hạ vân san",},
+        {id: 6,
+        name:"Hai cẳng chạy ra quán",},
+        {id: 7,
+        name:"Máu nhuộm bến thượng hải",},
+        {id: 8,
+        name:"Táo quân lội vạc dầu",},
+        {id: 9,
+        name:"Tóc rối thôi bay",},
+        {id: 10,
+        name:"Thủy quái đội lốt hoàng bào",},
+        {id: 11,
+        name:"Khoái lạc thủy cung",},
+      ],
+      menuShow: [
+        {id: 12,
+        name:"Canh trứng cà chua",},
+        {id: 1,
+        name:"Thịt trâu gác bếp",},
+        {id: 2,
+        name:"Thịt lợn kho trứng",},
+        {id: 3,
+        name:"Hết tiền nhịn đói !!",},
+        {id: 4,
+        name:"Rau muốn luộc",},
+        {id: 5,
+        name:"Trứng luộc",},
+        {id: 6,
+        name:"Nay ra quán ăn",},
+        {id: 7,
+        name:"Tiết canh",},
+        {id: 8,
+        name:"Cá chép chiên dầu",},
+        {id: 9,
+        name:"Mì ý",},
+        {id: 10,
+        name:"Tôm chiên xù",},
+        {id: 11,
+        name:"Canh sườn",},
+      ],
+      tempMenu: {
+        id: null,
+        name:"",
+      },
+      show: false
     };
   },
   methods: {
@@ -125,6 +231,22 @@ export default {
     },
     clearCompleted() {
       this.todos = this.activeTodos;
+    },
+
+    //menu to day
+    randomMenu(){
+      var keys = Object.keys(this.menu);
+      this.mean = this.menu[keys[ keys.length * Math.random() << 0]];
+      this.tempMenu.name = "";
+      this.tempMenu.id = null;
+      //return this.mean = this.menu[Math.floor(Math.random()*this.menu.length)];
+    },
+    noIAmFull(){
+      this.mean.id = null;
+      this.mean.name = "See you!";
+    },
+    showItem(meanId){
+      this.tempMenu = this.menuShow.find(x => x.id == meanId);
     }
   },
   computed: {
@@ -163,7 +285,13 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.toDoAppStyle {
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+.AppStyle {
   html,
   body {
     margin: 0;
@@ -206,10 +334,18 @@ export default {
   .hidden {
     display: none;
   }
-
+  .button--show{
+    color: #00c58e;
+    margin: 3px;
+    padding: 3px 7px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    border-color: #00c58e;
+  }
   .todoapp {
     background: #fff;
-    margin: 130px 0 40px 0;
+    margin: 12px 0 40px 0;
     position: relative;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
   }
@@ -231,16 +367,22 @@ export default {
     font-weight: 300;
     color: #e6e6e6;
   }
-
-  .todoapp h1 {
-    position: absolute;
-    top: -155px;
-    width: 100%;
+  h1 {
     font-size: 100px;
     font-weight: 100;
     text-align: center;
-    color: #35495e3d;
+    color: #35495e;
     //color: rgba(175, 47, 47, 0.15);
+    -webkit-text-rendering: optimizeLegibility;
+    -moz-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+  }
+  h2 {
+    width: 100%;
+    font-size: 60px;
+    font-weight: 100;
+    text-align: center;
+    color: #35495e3d;
     -webkit-text-rendering: optimizeLegibility;
     -moz-text-rendering: optimizeLegibility;
     text-rendering: optimizeLegibility;
@@ -533,5 +675,10 @@ export default {
       bottom: 10px;
     }
   }
+}
+
+// app menu today
+.menuToday{
+  text-align: center
 }
 </style>
