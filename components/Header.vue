@@ -1,5 +1,5 @@
 <template>
-  <div class="absoluteHoangVanHoa">
+  <div class="absoluteHoangVanHoa" id="topPage">
     <header class="headerHoangVanHoa">
       <div class="containerHoangVanHoa headerStyleHoangVanHoa">
         <div class="logoWebsiteHoangVanHoa">
@@ -10,50 +10,6 @@
               alt="logo-small-hoang-hoa-profile-official-home-page"
               class="logo-small-hoang-hoa-profile-official-home-page"
             />
-            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="20 20 70 70">
-              <path
-                d="M39.84,31.44a2.85,2.85,0,0,0-1,.2,4.75,4.75,0,0,0-9.39,0,2.86,2.86,0,1,0-1,5.53H39.84a2.86,2.86,0,0,0,0-5.73Z"
-                class="cls-2"
-              />
-              <path
-                d="M81.35,38.35a2.84,2.84,0,0,0-1,.2,4.75,4.75,0,0,0-9.39,0,2.86,2.86,0,1,0-1,5.53H81.35a2.86,2.86,0,0,0,0-5.73Z"
-                class="cls-2 cls-2-right"
-              />
-              <path d="M46.22,63.4,58.86,46.11a1.19,1.19,0,0,1,1.93,0L73.42,63.4Z" class="cls-3" />
-              <path d="M46.22,63.4,58.86,46.11a1.19,1.19,0,0,1,1.93,0L73.42,63.4Z" class="cls-4" />
-              <path d="M39.42,63.4,50.68,50.16a1.19,1.19,0,0,1,1.82,0L63.76,63.4Z" class="cls-3" />
-              <path d="M39.43,63.4,50.68,50.16a1.19,1.19,0,0,1,1.82,0L63.76,63.4Z" class="cls-4" />
-              <line x1="30.24" y1="63.4" x2="30.24" y2="57.68" class="cls-4" />
-              <polygon
-                points="35.97 53.38 31.67 48.37 34.53 48.37 30.24 43.36 25.95 48.37 28.81 48.37 24.52 53.38 28.09 53.38 24.52 57.68 30.24 57.68 35.97 57.68 32.39 53.38 35.97 53.38"
-                class="cls-5"
-              />
-              <path
-                d="M25.71,63.4a1.1,1.1,0,0,0-1.1,1.18,25,25,0,0,0,49.9,0,1.1,1.1,0,0,0-1.1-1.18Z"
-                class="cls-6"
-              />
-              <path
-                d="M25.71,63.4a1.1,1.1,0,0,0-1.1,1.18,25,25,0,0,0,49.9,0,1.1,1.1,0,0,0-1.1-1.18Z"
-                class="cls-4"
-              />
-              <path
-                d="M35.25,63.4a2.86,2.86,0,1,0,0,5.73,2.92,2.92,0,0,1,2.79,2l2.4,7.67a2.47,2.47,0,0,0,4.84-.74v-2a8.17,8.17,0,0,1,2.39-5.78A4,4,0,0,0,44.8,63.4Z"
-                class="cls-7"
-              />
-              <path
-                d="M68.89,78.58V73.92a4.08,4.08,0,0,0-4.08-4.08,3.08,3.08,0,0,0-3.08,3.08,3.08,3.08,0,0,1-2.61,3l-.76.12A7.89,7.89,0,0,0,51.73,83l-.55,4.69A24.92,24.92,0,0,0,68.89,78.58Z"
-                class="cls-3"
-              />
-              <path
-                d="M68.89,78.58V73.92a4.08,4.08,0,0,0-4.08-4.08,3.08,3.08,0,0,0-3.08,3.08,3.08,3.08,0,0,1-2.61,3l-.76.12A7.89,7.89,0,0,0,51.73,83l-.55,4.69A24.92,24.92,0,0,0,68.89,78.58Z"
-                class="cls-4"
-              />
-              <line x1="43.12" y1="63.4" x2="43.12" y2="59.11" class="cls-4" />
-              <polygon
-                points="48.85 54.81 44.55 49.8 47.42 49.8 43.12 44.8 38.83 49.8 41.69 49.8 37.4 54.81 40.98 54.81 37.4 59.11 43.12 59.11 48.85 59.11 45.27 54.81 48.85 54.81"
-                class="cls-5"
-              />
-            </svg>-->
           </nuxt-link>
         </div>
 
@@ -127,70 +83,33 @@
       </div>
     </header>
 
-    <div>
-      <!-- Load Facebook SDK for JavaScript -->
-      <div id="fb-root"></div>
-      <script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      xfbml: true,
-      version: "v5.0"
-    });
-  };
-
-  (function(d, s, id) {
-    var js,
-      fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s);
-    js.id = id;
-    js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
-    fjs.parentNode.insertBefore(js, fjs);
-  })(document, "script", "facebook-jssdk");
-      </script>
-
-      <!-- Your customer chat code -->
-      <div
-        class="fb-customerchat"
-        attribution="setup_tool"
-        page_id="2029349853972332"
-        theme_color="#5f9ea0"
-        logged_in_greeting="Hi! How can we help you? Contact me now! <3"
-        logged_out_greeting="Hi! How can we help you? Contact me now! <3"
-      ></div>
+    <div class="scrollTopPage" @click="scrollElement('topPage')">
+      <a ></a>
     </div>
 
-    <!-- <div class="scrollTopPage">
-      <a href="#topPage">Top ne</a>
-    </div>-->
   </div>
 </template>
-
-<script>
-window.fbAsyncInit = function() {
-  FB.init({
-    xfbml: true,
-    version: "v5.0"
-  });
-};
-
-(function(d, s, id) {
-  var js,
-    fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s);
-  js.id = id;
-  js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
-  fjs.parentNode.insertBefore(js, fjs);
-})(document, "script", "facebook-jssdk");
-</script>
 
 <script>
 export default {
   mounted() {
     //this.facebook();
   },
-  created() {}
+  created() {},
+  methods: {
+    scrollElement(el) {
+      let dataT = document.getElementById(el)
+      dataT.scrollIntoView();
+      // if (data) {
+      //   $([document.documentElement, document.body]).animate(
+      //     {
+      //       scrollTop: $("#" + el).offset().top
+      //     },
+      //     1500
+      //   )
+      // }
+    }
+  }
 };
 </script>
 

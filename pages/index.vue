@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="container" id="topPage">
+    <div class="container" >
       <div>
         <!-- <logo/> -->
         <div class="logoWebsite">
@@ -537,9 +537,9 @@
       </div>
     </div>
 
-    <div class="scrollTopPage" @click="scrollElement('topPage')">
+    <!-- <div class="scrollTopPage" @click="scrollElement('topPage')">
       <a href="#topPage"></a>
-    </div>
+    </div> -->
 
     <!-- popup code -->
     <!-- <div id="xmas-popup" class="popup" href="#">

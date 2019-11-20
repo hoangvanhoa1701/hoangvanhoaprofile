@@ -2,6 +2,7 @@
   <div>
     <Header/>
     <nuxt />
+
   </div>
 </template>
 
@@ -11,11 +12,15 @@ import Header from '~/components/Header.vue'
 export default {
   components: {
     Header
-  }
+  },
+
 }
 </script>
 
 <style>
+html {
+  scroll-behavior: smooth;
+}
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -66,5 +71,32 @@ html {
 .button--grey:hover {
   color: #fff;
   background-color: #35495e;
+}
+
+.scrollTopPage {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 30;
+  cursor: pointer;
+}
+.scrollTopPage > a {
+  position: relative;
+  display: block;
+  width: 48px;
+  height: 48px;
+  background-color: cadetblue;
+  color: #fff;
+}
+.scrollTopPage > a:before {
+  content: "";
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  transform: translate(-50%, -50%) rotate(45deg);
 }
 </style>

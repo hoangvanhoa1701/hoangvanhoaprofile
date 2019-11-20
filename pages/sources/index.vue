@@ -99,9 +99,9 @@
             <!-- <div class="links" v-if="tempMenu.name">
               => {{tempMenu.name}}
             </div> -->
-            <div class="links" v-if="tempMenu.name">
+            <div class="links">
               <transition name="fade">
-                <p v-if="show">=> {{tempMenu.name}} </p>
+                <p v-if="show">{{tempMenu.name}}</p>
               </transition>
             </div>
 
