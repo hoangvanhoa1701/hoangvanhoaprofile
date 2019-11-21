@@ -1,0 +1,40 @@
+@import "variables";
+
+//mixin
+@import "./mixin/text-truncate";
+@import "./mixin/resize";
+
+//import bootstrap if you want to use
+// @import "./bootstrap/mixins/_text-truncate.scss";
+// @import "./bootstrap/mixins/_text-emphasis.scss";
+// @import "./bootstrap/mixins/_hover.scss";
+// @import "./bootstrap/mixins/_text-hide.scss";
+// @import "./bootstrap/mixins/_float.scss";
+// @import "./bootstrap/mixins/_table-row.scss";
+
+// @import "./bootstrap/bootstrap-grid";
+// @import "./bootstrap/utilities/_spacing.scss";
+// @import "./bootstrap/utilities/_sizing.scss";
+// @import "./bootstrap/utilities/_text.scss";
+// @import "./bootstrap/utilities/_float.scss";
+
+//utilities
+@import "./utilities/background";
+@import "./utilities/color";
+@import "./utilities/display";
+@import "./utilities/text";
+@import "./utilities/image";
+@import "./utilities/sizing";
+
+//components
+@import "./components/burgerMenu";
+@import "./external/element-ui/index.css";
+
+//master
+@import "./font.scss";
+@import "button";
+@import "input";
+@import "social";
+@import "style";
+@import "responsive";
+@import "./index";

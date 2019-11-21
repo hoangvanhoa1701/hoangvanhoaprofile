@@ -1,0 +1,67 @@
+.social {
+  .fa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+
+    &.facebook {
+      background-color: #3b5998;
+
+      .icon {
+        color: #fff;
+      }
+    }
+
+    &.youtube {
+      background-color: #ff0000;
+
+      .icon {
+        color: #fff;
+      }
+    }
+
+    &.googlePlus {
+      background-color: #dc4e41;
+
+      .icon {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.btn.btn-social {
+  color: $color-white;
+  &:hover {
+    border-color: $color-white;
+    color: $color-white;
+  }
+}
+
+.btn-facebook {
+  background-color: #4c69ba !important;
+}
+
+.btn-facebook:hover {
+  background-color: #5b7bd5;
+}
+
+.btn-google {
+  background-color: #dd4b39 !important;
+}
+
+.btn-google:hover {
+  background-color: #e74b37;
+}
+
+.btn-twitter {
+  background-color: #1da1f3 !important;
+}
+
+.btn-twitter:hover {
+  background-color: #1da1f3;
+}

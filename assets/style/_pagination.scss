@@ -1,0 +1,123 @@
+.pagination {
+  margin: 1.5rem;
+  justify-content: center;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+  background-color: #ccc;
+  border-color: #ccc;
+  color: $color-black;
+  border-radius: 4px;
+  margin: 0 5px;
+  font-weight: bold;
+  padding: 10px 15px;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+  background-color: #fff;
+  border-color: transparent;
+  color: #3e3e3e;
+  border-radius: 0;
+  border: 1px solid #c4c4c4;
+  font-weight: 400;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+.pagination > li > span:hover,
+.pagination > .active > span:hover:hover {
+  border: 1px solid #3e3e3e;
+  background-color: #fff;
+  color: #3e3e3e;
+  border-radius: 0;
+  font-weight: 400;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+.pagination > .active > span,
+.pagination > .active > a {
+  background-color: $color-black;
+  border-color: transparent;
+  color: $color-white;
+  border-radius: 4px;
+  padding: 8px 15px;
+}
+
+.PagedList-skipToNext,
+.PagedList-skipToPrevious {
+  > a {
+    background-color: #ccc;
+    border-color: #ccc;
+    color: transparent !important;
+    font-weight: bold;
+    position: relative;
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+    text-align: center;
+  }
+  > a:after {
+    content: "\f04b";
+    font-family: $fontAwe;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: $color-black;
+    font-size: 14px;
+    padding: 10px 0px;
+  }
+  > a:hover::after {
+    color: $color-white;
+  }
+}
+
+.PagedList-skipToPrevious {
+  > a:after {
+    transform: rotateY(180deg);
+  }
+}
+
+@media (max-width: 576px) {
+  .pagination > li > a,
+  .pagination > li > span {
+    background-color: #ccc;
+    border-color: #ccc;
+    color: $color-black;
+    border-radius: 4px;
+    margin: 0 5px;
+    font-weight: bold;
+    padding: 6px 12px;
+  }
+
+  .pagination > li > a,
+  .pagination > li > span {
+    background-color: #fff;
+    border-color: transparent;
+    color: #3e3e3e;
+    border-radius: 0;
+    border: 1px solid #c4c4c4;
+    font-weight: 300;
+    padding: 6x 12px;
+    cursor: pointer;
+  }
+
+  .pagination > li > span:hover,
+  .pagination > .active > span:hover:hover {
+    border: 1px solid #3e3e3e;
+    background-color: #fff;
+    color: #3e3e3e;
+    border-radius: 0;
+    font-weight: 300;
+    padding: 6x 12px;
+    cursor: pointer;
+  }
+
+  .pagination > .active > span,
+  .pagination > .active > a {
+    padding: 6px 12px;
+  }
+}

@@ -1,0 +1,22 @@
+// @include bg-ratio();
+
+.img-background {
+  background-position: center;
+  -ms-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  &.contain {
+    background-size: contain;
+  }
+  &.origin {
+    background-origin: content-box;
+  }
+}
+
+@if $is-render-bg-class {
+    @each $key, $value in $list-colors {
+        .bg-#{$key} {
+            background-color: $value
+        }
+    }
+}

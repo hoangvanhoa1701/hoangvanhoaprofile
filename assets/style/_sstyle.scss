@@ -95,7 +95,7 @@ body {
 
 .contentCV {
 //   display: flex;
-    background: #f7fafc;
+  background: #f7fafc;
   border: 1px solid #35495e;
   border-radius: 12px;
   overflow: hidden;
@@ -107,7 +107,7 @@ body {
   background: #fff;
 }
 
-.contentCVLeftMain {}
+// .contentCVLeftMain {}
 
 .nameMember {
   font-size: 52px;
@@ -531,11 +531,6 @@ span {
     opacity: 0;
   }
 }
-
-/* .containerCV{
-    background: url("~assets/image/testSVG.svg") no-repeat right 40px
-      center;
-} */
 
 #CVMe {
   padding-top: 80px;

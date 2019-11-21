@@ -6,7 +6,7 @@
           <nuxt-link to="/" title="Logo Hoang Van Hoa Profile">
             <h1 class="overflowHiddenHoangVanHoa width0 height0">Hoang Van Hoa Profile</h1>
             <img
-              src="@/assets/image/logo/Hoang-Hoa-Profile-Official-Logo.png"
+              src="@/assets/images/logo/Hoang-Hoa-Profile-Official-Logo.png"
               alt="logo-small-hoang-hoa-profile-official-home-page"
               class="logo-small-hoang-hoa-profile-official-home-page"
             />

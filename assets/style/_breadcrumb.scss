@@ -1,0 +1,29 @@
+.breadcrumb {
+    background-color: transparent;
+    padding: 15px 0;
+    margin-bottom: 0;
+    > li {
+      display: inline-block;
+      &:first-child {
+        > .fa {
+          display: none;
+        }
+      }
+      .fa {
+        color: $color-black;
+        font-size: 10px;
+        padding: 0 10px;
+      }
+      a {
+        font-size: 0.9em;
+        color: $color-black;
+      }
+      a:hover {
+        color: $color-main;
+      }
+    }
+    > li.active {
+      color: $color-main;
+      text-transform: uppercase;
+    }
+  }

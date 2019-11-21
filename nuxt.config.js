@@ -18,13 +18,20 @@ export default {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  // loading: { color: '#fff' },
+  loading: "~/components/loading/loading.vue",
   /*
   ** Global CSS
   */
   css: [
-    '~assets/style/style.scss'
+    '~assets/style/bundled.scss'
   ],
+  manifest: {
+    name: "Hoang Hoa Profile",
+    short_name: "Hoang Hoa Profile",
+    description: "Hoang Hoa Profile",
+    theme_color: "#188269"
+  },
   /*
   ** Plugins to load before mounting the App
   */

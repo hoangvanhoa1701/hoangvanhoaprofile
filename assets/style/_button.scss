@@ -1,0 +1,68 @@
+.button{
+  width: auto;
+  background: transparent;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding:  0.8rem 1rem;
+  border: none;
+  cursor: pointer;
+  //transition: all 1s;
+  .arrowRight{
+    font-weight: bold;
+    transform: scale(-1.6, 1.5);
+  }
+  .transitionIcon{
+    position: relative;
+    left: 0px !important;
+    transition: all 0.4s ease;
+  }
+  &:hover{
+    // color: $color-red !important;
+    .transitionIcon{
+      position: relative;
+      left: 10px !important;
+      transition: left 0.4s ease;
+    }
+  }
+  &.button-white{
+    background: $color-white;
+  }
+  &.button-red{
+    // background: $color-red-contact;
+  }
+  &.button-transparent{
+    color: $color-black;
+  }
+  .darkBorderButtonReadMore:hover {
+    border: 3px solid white !important;
+  }
+  @media (max-width: 768px){
+    font-size: 1.05rem;
+    justify-content: center;
+    padding: 0.8rem 1rem;
+  }
+}
+
+.button-red{
+  width: auto;
+  background: transparent;
+  font-size: 22px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 44px;
+  padding-right: 44px;
+  border: none;
+  cursor: pointer;
+  color: $color-white;
+  // background: $color-red-contact;
+  &:hover{
+    background: $color-red;
+  }
+
+  @media (max-width: 768px){
+    font-size: 1.05rem;
+    justify-content: center;
+    padding: 0.8rem 1rem;
+  }
+}
+

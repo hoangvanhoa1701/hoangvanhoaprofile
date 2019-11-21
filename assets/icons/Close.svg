@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>00-Foundation/icon_Close</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M11.4852814,13.1005051 L3,4.61522369 L4.41421356,3.20101013 L12.8994949,11.6862915 L21.3847763,3.20101013 L22.7989899,4.61522369 L14.3137085,13.1005051 L22.7989899,21.5857864 L21.3847763,23 L12.8994949,14.5147186 L4.41421356,23 L3,21.5857864 L11.4852814,13.1005051 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="00-Foundation/icon_Close">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Mask" fill="#000000" fill-rule="nonzero" transform="translate(12.899495, 13.100505) rotate(-90.000000) translate(-12.899495, -13.100505) " xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

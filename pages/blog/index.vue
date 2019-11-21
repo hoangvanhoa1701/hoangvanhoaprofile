@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="containerCV" id="AboutMe">
-      <img src="@/assets/image/testSVG.svg" alt />
+      <img src="@/assets/images/testSVG.svg" alt />
       <div
         style="text-align:center;text-align: center;position: relative;bottom: 832px;"
       >Sorry, we're down for maintenace.

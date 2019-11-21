@@ -1,0 +1,16 @@
+.grayscale {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  &:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+  }
+}
+
+@if $is-render-color-class {
+  @each $key, $value in $list-colors {
+    .#{$key} {
+      color: $value;
+    }
+  }
+}

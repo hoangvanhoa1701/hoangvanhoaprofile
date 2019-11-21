@@ -1,0 +1,47 @@
+.full-description {
+  img,
+  table {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+  iframe{
+    max-width: 100% !important;
+  }
+}
+
+small{
+  font-size: 1.3vw;
+}
+
+.mediumText{
+  font-size: 2.3vw;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+  @extend .pointer;
+
+  &:hover {
+    color: #e7232b;
+  }
+}
+
+.text-1rem{
+  font-size: 1rem;
+}
+
+.text2rem{
+  font-size: 2rem;
+  @media (max-width: 768px) {
+    font-size: 1.6rem;
+  }
+}
+
+// @media (max-width: 768px){
+//   .text2rem{
+//     font-size: 1.6rem;
+//   }
+// }

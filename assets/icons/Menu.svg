@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="12px" viewBox="0 0 21 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>00-Foundation/Icon/Search</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M3,14 L3,12 L23.1107703,12 L23.1107703,14 L3,14 Z M3,19 L3,17 L23.1107703,17 L23.1107703,19 L3,19 Z M3,9 L3,7 L23.1107703,7 L23.1107703,9 L3,9 Z" id="path-1"></path>
+    </defs>
+    <g id="03-Set/Header/(lg)/768-1200" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-716.000000, -37.000000)">
+        <g id="00-Foundation/Icon/Menu" transform="translate(713.000000, 30.000000)">
+            <g id="Group">
+                <rect id="Rectangle-2" transform="translate(13.000000, 13.000000) rotate(-90.000000) translate(-13.000000, -13.000000) " x="0" y="-1.8e-15" width="26" height="26"></rect>
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+                <g id="00-Foundation/Color/Black" mask="url(#mask-2)" fill="#000000">
+                    <g transform="translate(13.000000, 13.000000) rotate(-180.000000) translate(-13.000000, -13.000000) " id="Rectangle">
+                        <rect x="0" y="0" width="26" height="26"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

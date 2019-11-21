@@ -1,0 +1,17 @@
+input::-webkit-input-placeholder {
+  color: $color-placehoder !important;
+}
+
+input:-moz-placeholder {
+  /* Firefox 18- */
+  color: $color-placehoder !important;
+}
+
+input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: $color-placehoder !important;
+}
+
+input:-ms-input-placeholder {
+  color: $color-placehoder !important;
+}
