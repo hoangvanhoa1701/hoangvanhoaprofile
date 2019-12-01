@@ -12,12 +12,6 @@ html {
     scroll-behavior: smooth; // smooth when scroll
 }
 
-html {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    -ms-overflow-style: scrollbar;
-}
-
 *,
 *::before,
 *::after {
@@ -27,13 +21,23 @@ html {
 
 body {
     font-family: $main-font;
+    // font-family: Quicksand, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     font-size: 16px;
     margin: 0;
     min-height: 100%;
     padding: 0;
     width: 100%;
-    color: $color-black;
+    color: $color-main;
+    font-weight: 500;
     line-height: 1.3;
+    word-spacing: 1px;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-overflow-style: scrollbar;
 }
 
 img {
@@ -141,7 +145,7 @@ img {
     text-shadow: -4px 5px 14px $color-black;
 }
 
-.h-transfarm-180 {
+.h-transform-180 {
     transform: rotate(180Deg)
 }
 
@@ -321,10 +325,45 @@ img {
 }
 
 
-/****************** ******************/
+/****************** end ******************/
 
 
-/****************** ******************/
+/****************** scroll top page ******************/
+
+.h-scrollTopPage {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 30;
+    cursor: pointer;
+}
+
+.h-scrollTopPage>a {
+    position: relative;
+    display: block;
+    width: 48px;
+    height: 48px;
+    background-color: #5f9ea0;
+    color: #fff;
+}
+
+.h-scrollTopPage>a:before {
+    content: "";
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+
+/****************** end ******************/
+
+
+/****************** # ******************/
 
 .aboutHomePageBox {
     cursor: pointer;
@@ -441,7 +480,7 @@ img {
 }
 
 .mobileMenuButton {
-    border-left: 1px solid darkgray;
+    border-left: 1px solid #a9a9a9;
     font-size: 1.7rem;
     width: 61px;
     .icon {
@@ -450,121 +489,13 @@ img {
 }
 
 
-/****************** ******************/
+/****************** end ******************/
 
 
 /* */
 
-body {
-    font-size: 18px;
-    color: #718096;
-    font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-}
-
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-[class*="col-"] {
-    float: left;
-    padding: 15px;
-}
-
-
-/* For mobile phones: */
-
-[class*="col-"] {
-    width: 100%;
-}
-
-@media only screen and (min-width: 600px) {
-    /* For tablets: */
-    .col-s-1 {
-        width: 8.33%;
-    }
-    .col-s-2 {
-        width: 16.66%;
-    }
-    .col-s-3 {
-        width: 25%;
-    }
-    .col-s-4 {
-        width: 33.33%;
-    }
-    .col-s-5 {
-        width: 41.66%;
-    }
-    .col-s-6 {
-        width: 50%;
-    }
-    .col-s-7 {
-        width: 58.33%;
-    }
-    .col-s-8 {
-        width: 66.66%;
-    }
-    .col-s-9 {
-        width: 75%;
-    }
-    .col-s-10 {
-        width: 83.33%;
-    }
-    .col-s-11 {
-        width: 91.66%;
-    }
-    .col-s-12 {
-        width: 100%;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    /* For desktop: */
-    .col-1 {
-        width: 8.33%;
-    }
-    .col-2 {
-        width: 16.66%;
-    }
-    .col-3 {
-        width: 25%;
-    }
-    .col-4 {
-        width: 33.33%;
-    }
-    .col-5 {
-        width: 41.66%;
-    }
-    .col-6 {
-        width: 50%;
-    }
-    .col-7 {
-        width: 58.33%;
-    }
-    .col-8 {
-        width: 66.66%;
-    }
-    .col-9 {
-        width: 75%;
-    }
-    .col-10 {
-        width: 83.33%;
-    }
-    .col-11 {
-        width: 91.66%;
-    }
-    .col-12 {
-        width: 100%;
-    }
-}
-
 
 /* */
-
-.transitionForOne {
-    transition: all .3s;
-}
 
 @-webkit-keyframes fadeIn {
     from {
@@ -584,198 +515,9 @@ body {
     }
 }
 
-.opacity0 {
-    opacity: 0;
-}
-
 .fadeIn {
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn;
-}
-
-.containerCV {
-    margin: 0 auto;
-    padding: 12px 0;
-    max-width: 1440px;
-    width: 95%;
-}
-
-.contentCV {
-    //   display: flex;
-    background: #f7fafc;
-    border: 1px solid #35495e;
-    border-radius: 12px;
-    overflow: hidden;
-}
-
-.contentCVLeft {
-    width: 66%;
-    padding: 28px;
-    background: $color-white;
-}
-
-// .contentCVLeftMain {}
-.nameMember {
-    font-size: 52px;
-    font-weight: 500;
-    color: cadetblue;
-    text-align: center;
-}
-
-.workMember {
-    font-size: 36px;
-    font-weight: 700;
-    color: darkgray;
-    padding-bottom: 32px;
-    text-align: center;
-}
-
-.listTernPlans {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-inline-start: 60px;
-}
-
-.contentCVLeftSup {
-    padding: 12px 0;
-}
-
-.typeInformationTitle {
-    display: flex;
-    text-align: center;
-    align-items: center;
-}
-
-.imageIconTitle {
-    margin-right: 12px;
-    //   border-radius: 50%;
-    //   width: 55px;
-    //   height: 55px;
-    //   background: cadetblue;
-    //   height: 55px;
-}
-
-.imageIconTitleStyle {
-    width: 100%;
-}
-
-.imageIconTitleStyleB {
-    border-radius: 50%;
-    width: 55px;
-    height: 55px;
-    background: cadetblue;
-    height: 55px;
-}
-
-.nameTitle {
-    font-size: 24px;
-    font-weight: 600;
-    color: cadetblue;
-    padding-right: 12px;
-}
-
-.alinetypeInformationTitle {
-    //   border-bottom: 1px solid #35495e;
-    border-bottom: 1px solid cadetblue;
-}
-
-.typeInformation {
-    padding: 12px 0px;
-}
-
-.typeInformationContentTitle {
-    display: flex;
-    justify-content: space-between;
-}
-
-.typeInformationContent {
-    padding: 12px 12px;
-}
-
-.typeInformationContentTitleName {
-    font-size: 24px;
-    font-weight: 600;
-    color: #35495ed4;
-    max-width: 80%;
-}
-
-.typeInformationContentTitleTime {
-    color: #869099;
-}
-
-.typeInformationContentFull {
-    color: #869099;
-}
-
-.typeInformationContentMain {
-    padding-bottom: 12px;
-}
-
-.typeInformationContentSup {
-    padding-bottom: 12px;
-}
-
-.contentCVRight {
-    width: 36%;
-    background: #f7fafc;
-    padding: 28px;
-}
-
-.imageAvatarMain {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    padding-top: 12px;
-}
-
-.imageAvatarMainStyle {
-    border-radius: 50%;
-    background: #e2e8f0;
-    // width: 400px;
-    // height: 400px;
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-}
-
-.img-400-400 {
-    position: relative;
-    /* > .content {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-    } */
-}
-
-.img-400-400:before {
-    display: block;
-    content: "";
-    width: 100%;
-    /* padding-top: ($height / $width) * 100%; */
-    padding-top: 100%;
-}
-
-.imageLarge {
-    object-position: center;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.logoWebsite {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-}
-
-.logoWebsiteW {
-    width: 33%;
 }
 
 .cls-2 {
@@ -805,12 +547,6 @@ body {
 
 :not(svg) {
     transform-origin: 0px 0px;
-}
-
-body {
-    font-family: Quicksand, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-    font-weight: 500;
-    color: #2f495e;
 }
 
 .cls-2-right {
@@ -953,78 +689,4 @@ body {
         -webkit-transform: none;
         transform: none;
     }
-}
-
-#wa_loading {
-    position: relative;
-    top: 40%;
-    text-align: center;
-    margin-top: 5%;
-}
-
-.wa-disable {
-    display: none;
-}
-
-span.l-1 {
-    -webkit-animation-delay: 1s;
-    animation-delay: 1s;
-    -ms-animation-delay: 1s;
-    -moz-animation-delay: 1s;
-}
-
-span[class*="l-"] {
-    height: 20px;
-    width: 20px;
-    background: red;
-    display: inline-block;
-    margin: 12px 2px;
-    border-radius: 100%;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    -webkit-animation: loader 4s infinite;
-    -webkit-animation-timing-function: cubic-bezier(0.030, 0.615, 0.995, 0.415);
-    -webkit-animation-fill-mode: both;
-    -moz-animation: loader 4s infinite;
-    -moz-animation-timing-function: cubic-bezier(0.030, 0.615, 0.995, 0.415);
-    -moz-animation-fill-mode: both;
-    -ms-animation: loader 4s infinite;
-    -ms-animation-timing-function: cubic-bezier(0.030, 0.615, 0.995, 0.415);
-    -ms-animation-fill-mode: both;
-    animation: loader 4s infinite;
-    animation-timing-function: cubic-bezier(0.030, 0.615, 0.995, 0.415);
-    animation-fill-mode: both;
-}
-
-span {
-    margin: 0 auto;
-    display: block;
-}
-
-#wa_loading {
-    position: relative;
-    top: 40%;
-    text-align: center;
-    margin-top: 5%;
-}
-
-@keyframes loader {
-    0% {
-        transform: translateX(-30px);
-        opacity: 0;
-    }
-    25% {
-        opacity: 1;
-    }
-    50% {
-        transform: translateX(30px);
-        opacity: 0;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-#CVMe {
-    padding-top: 80px;
 }

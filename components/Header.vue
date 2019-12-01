@@ -83,7 +83,7 @@
       </div>
     </header>
 
-    <div class="scrollTopPage" @click="scrollElement('topPage')">
+    <div class="h-scrollTopPage" @click="scrollElement('topPage')">
       <a ></a>
     </div>
 
@@ -142,7 +142,7 @@ export default {
   right: 0;
   z-index: 30;
 }
-.scrollTopPage {
+.h-scrollTopPage {
   position: fixed;
   background-color: #fff;
   bottom: 0;

@@ -1,6 +1,6 @@
 <template>
   <div style="padding-top: 180px;">
-    <div class="containerCV">
+    <div class="h-container">
       <div class="AppStyle">
         <h1>{{title}}</h1>
 
@@ -81,8 +81,8 @@
           <div class="menuToday">
             <div>Would you like something to eat?</div>
             <div class="links">
-              <a @click="randomMenu()" class="button--green transitionForOne">Random Menu Today</a>
-              <a @click="noIAmFull()" class="button--green transitionForOne">No, I'm full</a>
+              <a @click="randomMenu()" class="button--green h-transitionAll">Random Menu Today</a>
+              <a @click="noIAmFull()" class="button--green h-transitionAll">No, I'm full</a>
             </div>
             <div class="links">
               <div>{{mean.name}}</div>
@@ -113,7 +113,7 @@
       </div>
     </div>
 
-    <div class="containerCV" id="AboutMe">
+    <div class="h-container" id="AboutMe">
       <div style="text-align:center;padding-top:60px;">
         Updating ...
       </div>
