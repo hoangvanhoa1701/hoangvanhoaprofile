@@ -56,7 +56,7 @@
     "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-vue": "^4.4.0",
     "live-server": "1.2.0",
-    "node-sass": "^4.13.0",
+    "node-sass": "^4.13.1",
     "prettier": "^1.11.1",
     "pug": "^2.0.3",
     "pug-plain-loader": "^1.0.0",
